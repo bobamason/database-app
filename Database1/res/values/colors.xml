@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="text_color">#FFFFFF</color>
+    <color name="edit_bg_color">#282828</color>
+    <color name="bg1_color">@color/edit_bg_color</color>
+    <color name="bg2_color">#282828</color>
+    <color name="stroke_color">#000000</color>
+	<color name="gradient_end">#2B2B2B</color>
+	<color name="gradient_center">#1B1B1B</color>
+	<color name="gradient_start">#000000</color>
+	<color name="sortbar_color">@color/gradient_start</color>
+
+</resources>

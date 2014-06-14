@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/bg1_color">
+
+	<LinearLayout
+		android:id="@+id/top_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/sortbar_color"
+		android:orientation="horizontal">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_margin="6dp"
+			android:text="Sort By:"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:textColor="@color/text_color"
+			android:layout_weight="1.0"
+			android:gravity="right"/>
+
+		<Spinner
+			android:id="@+id/sortby_spinner"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="8dp"
+			android:layout_weight="2"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Order: "
+			android:layout_gravity="center_vertical"
+			android:layout_margin="6dp"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_weight="1.0"
+			android:gravity="right"/>
+
+		<Spinner
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_margin="8dp"
+			android:id="@+id/orderby_spinner"
+			android:layout_weight="2"/>
+
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/listView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/top_bar"/>
+
+</RelativeLayout>
+

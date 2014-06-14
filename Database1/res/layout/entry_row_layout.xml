@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#00000000"
+	android:paddingTop="6dp"
+	android:paddingBottom="6dp">
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:id="@+id/entryrowlayoutLinearLayout1">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:orientation="vertical"
+			android:layout_weight=".4">
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:gravity="bottom"
+				android:background="@drawable/section_bg"
+				android:layout_margin="@dimen/section_margin"
+				android:padding="@dimen/section_padding">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Name:"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:textColor="@color/text_color"/>
+
+				<TextView
+					android:id="@+id/name_row"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Name"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/text_color"
+					android:layout_marginLeft="10dp"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:orientation="horizontal"
+				android:id="@+id/entryrowlayoutLinearLayout2"
+				android:gravity="bottom"
+				android:background="@drawable/section_bg"
+				android:layout_margin="@dimen/section_margin"
+				android:padding="@dimen/section_padding">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Category:"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:textColor="@color/text_color"/>
+
+				<TextView
+					android:id="@+id/category_row"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Category"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:textColor="@color/text_color"
+					android:layout_marginLeft="10dp"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="match_parent"
+			android:layout_width="0dp"
+			android:orientation="horizontal"
+			android:id="@+id/entryrowlayoutLinearLayout3"
+			android:gravity="top"
+			android:background="@drawable/section_bg"
+			android:padding="@dimen/section_padding"
+			android:layout_margin="@dimen/section_margin"
+			android:layout_weight=".6">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Description:"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/text_color"/>
+
+			<TextView
+				android:id="@+id/description_row"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="description"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:textColor="@color/text_color"
+				android:layout_marginLeft="10dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:id="@+id/entryrowlayoutLinearLayout4"
+		android:layout_below="@id/entryrowlayoutLinearLayout1">
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:orientation="horizontal"
+			android:layout_weight="1.0"
+			android:gravity="bottom|center"
+			android:background="@drawable/section_bg"
+			android:layout_margin="@dimen/section_margin"
+			android:padding="@dimen/section_padding">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Cost:"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="#FF0F00"/>
+
+			<TextView
+				android:id="@+id/cost_row"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Cost"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="#FF0F00"
+				android:layout_marginLeft="10dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="0dp"
+			android:orientation="horizontal"
+			android:layout_weight="1.0"
+			android:gravity="bottom|center"
+			android:background="@drawable/section_bg"
+			android:layout_margin="@dimen/section_margin"
+			android:padding="@dimen/section_padding">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Est. Value:"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:textColor="#60FF00"/>
+
+			<TextView
+				android:id="@+id/value_row"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="Value"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:textColor="#60FF00"
+				android:layout_below="@id/description_row"
+				android:layout_marginLeft="10dp"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+
