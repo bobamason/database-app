@@ -132,7 +132,7 @@ public class MainActivity extends ActionBarActivity implements
 			}
 			return true;
 		case R.id.menu_source:
-			String url = "http://www.github.com";
+			String url = "https://github.com/bobm3/database-app/tree/master/Database1";
 			Intent intent = new Intent(Intent.ACTION_VIEW);
 			intent.setData(Uri.parse(url));
 			startActivity(intent);
